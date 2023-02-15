@@ -40,6 +40,7 @@ export default component$(() => {
   });
 
   return (<>
+    <h1>Refresh Browser</h1>
     <div style={bgStyle.value} onMouseDown$={newColor}>
       <Label key={"A"}>CSS Animation</Label>
       <div key={"B"} class={cssAnim}>CLICK ME!</div>

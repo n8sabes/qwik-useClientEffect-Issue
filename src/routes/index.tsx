@@ -6,16 +6,13 @@ export default component$(() => {
   return (
     <div>
       <h1>
-        Welcome to Qwik <span class="lightning">⚡️</span>
+        Go to pages and then refresh <span class="lightning">⚡️</span>
       </h1>
 
-
-      <Link class="mindblow" href="/useBrowserVisibleTask/">
-        useBrowserVisibleTask 🤯
-      </Link>
-      <Link class="mindblow" href="/useClientEffect/">
-      useClientEffect 🤯
-      </Link>
+      {/* <Link class="mindblow" href="/useBrowserVisibleTask/">useBrowserVisibleTask (works)</Link>
+      <Link class="mindblow" href="/useBrowserVisibleTask/">useClientEffect</Link> */}
+      <button class="mindblow" onClick$={() => window.location.href = "/useBrowserVisibleTask"}>useBrowserVisibleTask (works)</button><br />
+      <button class="mindblow" style={{background: "red"}} onClick$={() => window.location.href = "/useClientEffect"}>useClientEffect (does not work)</button>
     </div>
   );
 });

@@ -101,6 +101,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
+button.mindblow,
 a.mindblow,
 a.todolist {
   margin: 10px auto;
